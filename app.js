@@ -4,7 +4,7 @@
 let numeroSecreto;
 let intentos;
 let listaNumerosSorteados = [];
-let numeroMaximo = 4;
+let numeroMaximo = 6;
 
 function condicionesIniciales() {
   asignarTextoElemento('h1', 'Juego del número secreto'); //Hoisiting
@@ -61,6 +61,16 @@ function generarNumeroSecreto() {
       return numeroGenerado;
     }
   }
+
+  // if (listaNumerosSorteados.length >= parseInt(numeroMaximo / 2)) {
+  //   listaNumerosSorteados.shift();
+  // }
+  // if (listaNumerosSorteados.includes(numeroGenerado)) {
+  //   return generarNumeroSecreto();
+  // } else {
+  //   listaNumerosSorteados.push(numeroGenerado);
+  //   return numeroGenerado;
+  // }
 }
 
 function limpiarCajaDeTexto() {
